@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.migration.poc";
+option java_outer_classname = "JavaRpcServer";
+option objc_class_prefix = "HLW";
+
+package com.migration.poc;
+
+service JavaRpcServerService {
+  rpc send (JavaRpcServerRequest) returns (JavaRpcServerReply) {}
+}
+
+message JavaRpcServerRequest {
+  string name = 1;
+}
+
+message JavaRpcServerReply {
+  string message = 1;
+}

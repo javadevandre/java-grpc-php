@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.migration.poc";
+option java_outer_classname = "JavaRestGrpc";
+option objc_class_prefix = "HLW";
+
+package com.migration.poc;
+
+service JavaRestGrpcServerService {
+  rpc send (JavaRestGrpcServerRequest) returns (JavaRestGrpcServerReply) {}
+}
+
+message JavaRestGrpcServerRequest {
+  string name = 1;
+}
+
+message JavaRestGrpcServerReply {
+  string message = 1;
+}

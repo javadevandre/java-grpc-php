@@ -1,0 +1,6 @@
+applicationType: grpc
+defaultPackage: com.migration.poc
+testFramework: spock
+sourceLanguage: java
+buildTool: gradle
+features: [annotation-api, app-name, gradle, grpc, java, java-application, logback, micronaut-build, readme, shade, spock, yaml]

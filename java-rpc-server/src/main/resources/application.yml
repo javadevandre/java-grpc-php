@@ -1,0 +1,9 @@
+micronaut:
+  application:
+    name: javaRpcServer
+
+grpc:
+  server:
+    port: 6005
+    keep-alive-time: 5m
+    max-inbound-message-size: 64
